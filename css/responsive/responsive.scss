@@ -1,0 +1,139 @@
+@media (max-width: 1049px) {
+  body {
+
+    & > .sticky {
+      padding: 10px 20px;
+    }
+
+    & > header {
+      padding: 12px 20px;
+      & > .navigation {
+        display: none ;
+      }
+
+      
+    & > .active {
+      z-index: 888;
+      position: fixed;
+      background: #fff;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 380px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0 5px 15px rgba(1, 1, 1, 15%);
+      transition: 0.3s ease;
+
+      & > a {
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+        padding: 2px 20px;
+        border-radius: 20px;
+
+        &:hover {
+          background: #dc143d;
+          color: #fff;
+        }
+      }
+    }
+
+      & > .menu-btn {
+        position: absolute;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        color: #fff;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: .4s ease;
+
+        & > .fa-bars {
+          display: inline !important;
+          transition: .5s ease;
+          position: fixed;
+        }
+
+        & > .fa-close {
+          filter: invert(1);
+          z-index: 999;
+          position: fixed;
+          transition: .5s ease;
+        }
+      }
+
+    }
+
+    & > section {
+      padding: 80px 20px;
+
+      & > .title {
+        & > .section-title {
+          font-size: 36px;
+        }
+      }
+    }
+
+    & > .main {
+      & > .content {
+        & > h2 {
+          font-size: 25px;
+        }
+
+        & > h3 {
+          font-size: 35px;
+        }
+      }
+    }
+
+    & > .about {
+      & > .content {
+        flex-direction: column;
+
+        & > .column {
+          width: 100%;
+        }
+
+        & > .col-right {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    & > .skills {
+      & > .content {
+        flex-direction: column;
+        & > .column {
+          position: relative;
+          width: 100%;
+        }
+
+        & > .col-right {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    & > .contact {
+      & > .contact-form {
+        padding: 35px 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1049px) {
+  body {
+    & > header {
+      & > .menu-btn {
+        display: none;
+      }
+    }
+  }
+}
+
